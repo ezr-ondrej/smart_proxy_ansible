@@ -24,14 +24,13 @@ Gem::Specification.new do |gem|
   gem.license = 'GPL-3.0'
   gem.required_ruby_version = '>= 2.5'
 
-  gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency('logger')
   gem.add_development_dependency('mocha', '~> 1')
-  gem.add_development_dependency('webmock', '~> 3')
   gem.add_development_dependency('rack-test', '~> 0')
-  gem.add_development_dependency('logger')
-  gem.add_runtime_dependency('foreman-tasks-core', '~> 0.3.2')
+  gem.add_development_dependency('rake', '~> 13.0')
+  gem.add_development_dependency('webmock', '~> 3')
   gem.add_runtime_dependency('foreman_remote_execution_core', '~> 1.1')
+  gem.add_runtime_dependency('foreman-tasks-core', '~> 0.3.2')
   gem.add_runtime_dependency('net-ssh')
   gem.add_runtime_dependency('smart_proxy_dynflow', '~> 0.1')
 end
